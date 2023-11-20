@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1052569248874",
+    "project_id": "pizza-3city-231",
+    "storage_bucket": "pizza-3city-231.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052569248874:android:33c6292e15be8313ec5613",
+        "android_client_info": {
+          "package_name": "com.sebastianlech.best_pizza_3city"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF2Lecd4NLcRqVmjLlWnDt7s5wQtHG0_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

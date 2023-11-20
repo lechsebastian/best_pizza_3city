@@ -89,11 +89,11 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
+            VALUE "CompanyName", "com.sebastianlech" "\0"
             VALUE "FileDescription", "best_pizza_3city" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "best_pizza_3city" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.sebastianlech. All rights reserved." "\0"
             VALUE "OriginalFilename", "best_pizza_3city.exe" "\0"
             VALUE "ProductName", "best_pizza_3city" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
