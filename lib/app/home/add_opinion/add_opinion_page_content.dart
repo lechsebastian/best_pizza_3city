@@ -2,9 +2,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class AddOpinionPageContent extends StatefulWidget {
-  const AddOpinionPageContent({
+  AddOpinionPageContent({
     super.key,
+    required this.onSave,
   });
+
+  final Function onSave;
 
   @override
   State<AddOpinionPageContent> createState() => _AddOpinionPageContentState();
@@ -43,6 +46,7 @@ class _AddOpinionPageContentState extends State<AddOpinionPageContent> {
                 });
               },
             ),
+            const SizedBox(height: 10),
             Slider(
               value: rating,
               min: 0.0,
@@ -57,15 +61,18 @@ class _AddOpinionPageContentState extends State<AddOpinionPageContent> {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                FirebaseFirestore.instance.collection('restaurants').add(
-                  {
-                    'name': restaurantsName,
-                    'pizza': pizzaName,
-                    'rating': rating,
-                  },
-                );
-              },
+              onPressed: restaurantsName.isEmpty || pizzaName.isEmpty
+                  ? null
+                  : () {
+                      FirebaseFirestore.instance.collection('restaurants').add(
+                        {
+                          'name': restaurantsName,
+                          'pizza': pizzaName,
+                          'rating': rating,
+                        },
+                      );
+                      widget.onSave();
+                    },
               child: const Text('Add'),
             ),
           ],
