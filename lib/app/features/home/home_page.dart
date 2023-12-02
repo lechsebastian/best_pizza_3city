@@ -1,6 +1,6 @@
-import 'package:best_pizza_3city/app/home/add_opinion/add_opinion_page_content.dart';
-import 'package:best_pizza_3city/app/home/my_account/my_account_page_content.dart';
-import 'package:best_pizza_3city/app/home/restaurants/restaurants_page_content.dart';
+import 'package:best_pizza_3city/app/features/home/add_opinion/add_opinion_page_content.dart';
+import 'package:best_pizza_3city/app/features/home/my_account/my_account_page_content.dart';
+import 'package:best_pizza_3city/app/features/home/restaurants/restaurants_page_content.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class AddOpinionPageContent extends StatefulWidget {
-  AddOpinionPageContent({
+  const AddOpinionPageContent({
     super.key,
     required this.onSave,
   });
